@@ -4,88 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pranjal Bhatia - QUT Centre for Robotics</title>
+    <title>Pranjal Bhatia - Robotics Researcher</title>
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
 
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQ5ZWR13W4"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-EQ5ZWR13W4');
-    </script>
 </head>
 
 <body>
 
     <div id="main">
-        
-        <!-- Introduction Section -->
-        <div id="intro">
-            <div id="intro-image">
-                <img src="images/pranjal.jpeg" alt="Pranjal Bhatia">
-            </div>
-            <div id="intro-text">
-                <h1>Pranjal Bhatia</h1>
-                <p>
-                    Hi there! I am currently pursuing a PhD at the 
-                    <a href="https://www.qut.edu.au/research/centre-for-robotics">QUT Centre for Robotics</a> 
-                    and <a href="https://iiitd.ac.in">IIIT Delhi</a>. My research focuses on developing 
-                    decentralized control algorithms for multi-agent systems. I have worked on creating 
-                    a unified framework that combines global connectivity maintenance, decentralized collision 
-                    avoidance, and formation control using control barrier functions. My goal is to build safe, 
-                    autonomous systems for real-world applications.
-                </p>
 
-                <!-- Social Links -->
-                <div id="intro-links-container">
-                    <div id="intro-links">
-                        <a href="mailto:pranjal.bhatia@hdr.qut.edu.au" title="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a href="https://scholar.google.com/citations?user=GnUbdKoAAAAJ&hl=en" title="Google Scholar">
-                            <i class="fas fa-graduation-cap"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/pranjal-bhatia" title="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
-                </div>
+        <!-- Profile Section -->
+        <div id="profile">
+            <img src="images/pranjal.jpeg" alt="Pranjal Bhatia">
+            <h1>Pranjal Bhatia</h1>
+            <h2>PhD Researcher | Multi-Agent Robotics</h2>
+            <p>
+                I am a PhD researcher at the 
+                <a href="https://www.qut.edu.au/research/centre-for-robotics">QUT Centre for Robotics</a> 
+                and <a href="https://iiitd.ac.in">IIIT Delhi</a>. My work focuses on decentralized 
+                multi-agent control, developing real-time connectivity maintenance, 
+                collision avoidance, and formation control strategies for autonomous systems.
+            </p>
+
+            <!-- Social Icons -->
+            <div id="contact">
+                <a href="mailto:pranjal.bhatia@hdr.qut.edu.au" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://scholar.google.com/citations?user=GnUbdKoAAAAJ&hl=en" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="https://www.linkedin.com/in/pranjal-bhatia" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
 
         <!-- Research Section -->
         <div id="research">
             <h2>Research</h2>
-            <div id="research-list">
-                <div class="ri">
-                    <div class="ri-image">
-                        <video width="100%" height="100%" autoplay loop muted playsinline>
-                            <source src="images/sixAgentCBF.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="ri-text">
-                        <div class="ri-text-title">
-                            Decentralized Connectivity Maintenance for Multi-Agent Systems Using Control Barrier Functions
-                        </div>
-                        <div class="ri-text-authors">
-                            <b>Pranjal Bhatia</b>, Sayan Basu Roy, P.B Sujit, Luis Mejias Alvarez, Aaron McFadyen
-                            <br>
-                            <span class="conference-tag">&#9733; ICUAS 2024 &#9733;</span>
-                        </div>
-                        <div class="ri-text-links">
-                            <a href="https://ieeexplore.ieee.org/document/10557121">IEEE Xplore</a>
-                        </div>
-                    </div>
+            <div class="research-item">
+                <video autoplay loop muted playsinline>
+                    <source src="images/sixAgentCBF.mp4" type="video/mp4">
+                </video>
+                <div class="research-text">
+                    <h3>Decentralized Connectivity Maintenance for Multi-Agent Systems</h3>
+                    <p><b>Pranjal Bhatia</b>, Sayan Basu Roy, P.B Sujit, Luis Mejias Alvarez, Aaron McFadyen</p>
+                    <p class="conference">&#9733; ICUAS 2024 &#9733;</p>
+                    <a href="https://ieeexplore.ieee.org/document/10557121" class="button">IEEE Xplore</a>
                 </div>
             </div>
         </div>
@@ -93,10 +59,9 @@
     </div>
 
     <!-- Footer -->
-    <footer id="footer">
-        Website template adapted from <a href="https://jadchakra.github.io">Jad Chakra</a>.
+    <footer>
+        <p>&copy; 2025 Pranjal Bhatia. Template adapted from <a href="https://jadchakra.github.io">Jad Chakra</a>.</p>
     </footer>
 
 </body>
-
 </html>
