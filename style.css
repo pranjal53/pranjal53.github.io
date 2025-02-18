@@ -143,6 +143,8 @@ table {
 }
 
 #main {
+    display: flex;
+    flex-direction: column;
     width: 54em;
     margin: 0px auto;
     position: relative;
