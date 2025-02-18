@@ -289,8 +289,9 @@ h1 {
 /* Subtle footer at the bottom of the page. */
 
 #footer {
-    color: #a0a8b0;
-    bottom: 0;
-    padding-left:4em;
-    line-height: 2.5em;
-  }
+    text-align: center;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #f1f1f1;
+    margin-top: auto;
+}
