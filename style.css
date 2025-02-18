@@ -1,79 +1,149 @@
-/* CSS Reset */
-html, body, div, h1, h2, p, a, img, video, footer {
+/* Global Styles */
+html, body {
     margin: 0;
     padding: 0;
-    border: 0;
-    font-size: 100%;
-    font-family: 'Roboto', sans-serif;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    color: #222;
     background-color: #f9f9f9;
-    color: #333;
-}
-
-#main {
-    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
 }
 
-#intro {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#intro-image img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-}
-
-#intro-links a {
-    font-size: 1.5em;
-    margin: 0 10px;
-    color: #0077b5;
-}
-
-#intro-links a:hover {
-    color: #005582;
-}
-
-#research {
-    margin-top: 20px;
-}
-
-.ri {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.ri video {
-    width: 120px;
-    height: 120px;
-    border-radius: 10px;
-}
-
-#footer {
+/* Main Container */
+#main {
+    max-width: 50em;
+    width: 90%;
     text-align: center;
-    padding: 10px;
-    background-color: #333;
+    margin: auto;
+    padding: 2em 0;
+}
+
+/* Profile Section */
+#profile img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#profile h1 {
+    font-size: 2.2em;
+    font-weight: 600;
+    margin-top: 0.5em;
+}
+
+#profile h2 {
+    font-size: 1.3em;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 0.5em;
+}
+
+#profile p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 1.5em;
+}
+
+/* Contact Icons */
+#contact {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    margin-top: 1em;
+}
+
+#contact a {
+    font-size: 1.8em;
+    color: #444;
+    transition: color 0.3s ease-in-out;
+}
+
+#contact a:hover {
+    color: #0073b1;
+}
+
+/* Research Section */
+#research {
+    margin-top: 3em;
+}
+
+#research h2 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.research-item {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.research-item video {
+    width: 8em;
+    height: 8em;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.research-text {
+    flex: 1;
+}
+
+.research-text h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.research-text p {
+    font-size: 1em;
+    color: #666;
+    margin: 0.3em 0;
+}
+
+.conference {
+    font-weight: bold;
+    color: #0073b1;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    background-color: #0073b1;
     color: white;
-    font-size: 0.9em;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #005a8e;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    font-size: 1em;
+    background-color: #eeeeee;
     margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #0073b1;
+    font-weight: bold;
 }
